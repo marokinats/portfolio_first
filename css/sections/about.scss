@@ -1,0 +1,49 @@
+.about{
+	@extend %clearfix;
+	// margin-left: 20px;
+}
+
+.about__left{
+	width: 340px;
+	float: left;
+	text-align: center; //Внутри блока все инлайн-блоки выравниваются по центру
+	margin-top: 10px;
+}
+
+.about__pic{
+	display: inline-block; //Чтобы выровнять по центру
+	width: 220px;
+	height: 210px;
+	border-radius: 50%;
+	overflow: hidden; //Чтобы контент не вылазил за обертку
+	border: 5px solid #ffffff;
+}
+
+.about__ava{
+	display: block; //Чтобы убрать отступ снизу у картинки по умолчанию
+}
+
+.about__right{
+	width: 380px;
+	float: right;
+}
+
+.text-block{
+	font-weight: 300;
+	line-height: 26px;
+}
+
+.text-block p{
+	margin-bottom: 15px;
+	margin-top: 0;
+}
+
+.about__text{
+	height: 320px;
+	overflow: auto; // Появится скролл
+	margin-bottom: 50px;
+}
+
+.about__btn{
+	text-align: right;
+}

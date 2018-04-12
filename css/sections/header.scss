@@ -1,0 +1,157 @@
+.header{
+	min-height: 80px;
+	background-color: #ffffff;
+	-webkit-box-shadow: 0px 1px 3px 0px rgba(230,230,230,1);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(230,230,230,1);
+    box-shadow: 0px 1px 3px 0px rgba(230,230,230,1);
+	padding-bottom: 9px;
+	margin-bottom: 25px;
+}
+
+.header__info-left{
+	float: left;
+	width: 50%;
+	padding-top: 16px;
+}
+
+.header__info-right{
+	float: right;
+	width: 50%;
+	text-align: right;
+	padding-top: 40px;
+	position: relative;
+}
+
+.user__ava{
+	display: inline-block;
+	vertical-align: middle;
+	// width: 60px;
+	// height: 60px;
+	border: 2px solid #bebebe;
+	border-radius: 50%;
+	overflow: hidden; //Чтобы контент не вылазил за обертку
+}
+
+.user__ava_style{
+	display: block; //Чтобы убрать отступ снизу у картинки по умолчанию
+}
+
+.user__name{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 12px;
+	font-weight: 400;
+	line-height: 28px;
+	padding-top: 10px;
+	max-width: 235px;
+}
+
+.contacts-icon{
+	display: none;
+}
+.contacts{
+	font-weight: 600;
+	text-decoration: none;
+	color: #32c3e5;
+	// padding-bottom: 2px;
+	border-bottom: 1px dashed #32c3e5;
+	&:hover{
+		color: #e85f61;
+		border-color: #e85f61;
+	}
+}
+
+//Выпадающие контакты
+.contacts-block{
+	position: relative;
+	display: inline-block;
+}
+
+.contacts__dropdown{
+	position: absolute;
+	left: -9999px;
+	min-width: 300px;
+	min-height: 135px;
+	top: 100%;
+	transform: translateX(-50%);
+	z-index: 10;
+	margin-top: 20px;
+		
+		&::before{
+			content: "";
+			display: block;
+			height: 20px;
+			left: 0;
+			right: 0;
+			top: -18px;
+			position: absolute;
+			z-index: 10;
+		}
+}
+
+.contacts__list{
+	position: relative;
+	border: 1px solid rgb(222, 222, 222);
+	border-radius: 10px;
+	background-color:  #ffffff;
+}
+
+.contacts:hover ~ .contacts__dropdown{
+	left: 50%;
+}
+
+.contacts__dropdown:hover{
+	left: 50%;
+}
+
+.contacts__item{
+	padding: 10px 20px;
+}
+
+.contacts__link{
+	display: inline-block;
+	text-decoration: none;
+	width: 100%;
+}
+
+.contacts__link-icon{
+	display: inline-block;
+	color: #33bfe2;
+	margin-right: 10px;
+}
+
+.contacts__link-text{
+	display: inline-block;
+	font-weight: 300;
+	color: #414141;
+	&:hover{
+		color: #33bfe2;
+	}
+}
+
+//Треугольник
+.contacts__list::after{
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #ffffff;
+	top: -9px;
+	right: 50%;
+	margin-right: -10px;
+}
+
+.contacts__list::before{
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid rgb(222, 222, 222);
+	top: -11px;
+	right: 50%;
+	margin-right: -10px;
+}

@@ -1,0 +1,127 @@
+@media screen and (max-width: 992px){
+	.container{
+		width: 728px;
+	}
+	//Contacts
+	.contacts__dropdown{
+		min-width: 220px;
+	}
+	.contacts__item{
+		padding: 5px 15px;
+	}
+	.contacts__link-icon,
+	.contacts__link-text{
+		font-size: 14px;
+	}
+	.contacts__link-icon{
+		margin-right: 5px;
+	}
+	.contacts:hover ~ .contacts__dropdown{
+		left: 10%;
+	}
+	.contacts__dropdown:hover{
+		left: 10%;
+	}
+	//Sidebar
+	.sidebar{
+		float: none;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.navigation__item{
+		display: inline-block;
+	}
+	.navigation__link{
+	    padding-top: 0;
+	    padding-right: 25px;
+	}
+	.navigation__link_active{
+		border: none;
+	}
+	.main{
+		float: none;
+		width: 100%;
+	}
+	//Hello
+	.hello{
+		min-height: 220px;
+		width: 353px;
+	}
+	.hello__pic{
+		top: -52px;
+		margin-left: -52px;
+		width: 104px;
+		height: 104px;
+}
+	.hello__name{
+		width: 140px;
+		min-height: 140px;
+		padding-top: 68px;
+}
+	.hello__btn{
+		height: 80px;
+	}
+	//About
+	.about__left{
+		width: 30%;
+		margin: 0;
+	}
+	.about__right{
+		width: 70%;
+		padding: 0 60px 0 28px;
+		box-sizing: border-box;
+	}
+	.about__pic{
+		// max-width: 70%;
+		width: 165px;
+		height: 165px;
+	}
+	.title{
+		margin-bottom: 10px;
+	}
+	.about__text{
+		height: auto;
+	}
+	.text-block p{
+		margin-bottom: 5px;
+	}
+	.btn{
+		padding: 2px 10px;
+	}
+	//Career
+	.career_title {
+		margin-left: 0;
+		margin-bottom: 18px;
+	}
+	.career__left{
+		width: 228px;
+	}
+	.jobs__block{
+		width: 356px;
+	}
+	//Portfolio
+	.portfolio_title {
+    	margin-left: 0;
+    	margin-top: -20px;
+    	margin-bottom: 15px;
+	}
+	.portfolio__info {
+    	margin-left: 0;
+	}
+	.works{
+	}
+	.works__item{
+		width: 228px;
+	}
+	.works__img{
+		height: 180px;
+	}
+	.works__desc {
+    	padding: 10px 20px 15px;
+	}
+	.works__about {
+    	margin-bottom: 10px;
+	}
+
+}
+

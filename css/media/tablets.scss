@@ -1,0 +1,121 @@
+@media screen and (max-width: 768px){
+	.container{
+		width: 480px;
+	}
+	//Contacts
+	.contacts__dropdown{
+		min-width: 200px;
+	}
+	.contacts__dropdown{
+		margin-top: 15px;
+	}
+	.contacts-icon:hover + .contacts__dropdown{
+		left: -200%;
+	}
+	.contacts__dropdown:hover{
+		left: -200%;
+	}
+	.contacts__item{
+		padding: 5px 5px;
+	}
+	.contacts__list::after{
+		right: 15%;
+	}
+	.contacts__list::before{
+		right: 15%;
+	}
+	//header
+	.header__info-left{
+		width: 75%;
+	}
+	.header__info-right{
+		padding-top: 30px;
+		width: 20%;
+	}
+	.contacts{
+		display: none;
+	}
+	.contacts-icon{
+		display: inline-block;
+		color:  #32c3e5;
+		font-size: 40px;
+		&:hover{
+			color: #e85f61;
+		}
+	}
+	//About
+	.about__left{
+		float: none;
+		display: inline-block;
+		width: 100%;
+	// 	width: 400px;
+	}
+	.about__right{
+		float: none;
+		display: inline-block;
+		width: 100%;
+		padding: 0;
+	// 	width: 400px;
+	}
+	.title{
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	.about__text{
+		padding: 0 20px;
+		margin-bottom: 30px;
+	}
+	.about__btn {
+		text-align: center;
+	}
+	//footer
+	.footer{
+		text-align: center;
+	}
+	.footer__ifo-left{
+		float: none;
+		display: inline-block;
+		width: 100%;
+	}
+	.footer__info-right{
+		float: none;
+		display: inline-block;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	//Career
+	.career_title {
+		margin-bottom: 20px;
+	}
+	.career__left{
+		float: none;
+		margin: 0 auto 20px;
+	}
+	.career__right{
+		float: none;
+		width: 100%;
+	}
+	.jobs{
+		text-align: center;
+	}
+	.jobs__item{
+		padding-left: 0;
+	}
+	.jobs__block{
+		width: 440px;
+	}
+	.jobs__year{
+		display: none;
+	}
+	.jobs__year::after{
+		display: none;
+	}
+	.jobs__block::after, .jobs__block::before{
+		display: none;
+	}
+	//Portfolio
+	.portfolio_title{
+		margin-bottom: 15px;
+	}
+}

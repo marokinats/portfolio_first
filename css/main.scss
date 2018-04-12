@@ -1,0 +1,23 @@
+// mixins
+@import "layout/mixins.scss";
+
+// layout setups
+@import "layout/normalize";
+@import "layout/adjustment";
+@import "layout/fonts";
+@import "layout/font-awesome";
+
+// sections
+@import "sections/content.scss";
+@import "sections/header.scss";
+@import "sections/footer.scss";
+@import "sections/sidebar.scss";
+@import "sections/hello.scss";
+@import "sections/about.scss";
+@import "sections/career.scss";
+@import "sections/portfolio.scss";
+
+//responsive design
+@import "media/laptop.scss";
+@import "media/tablets.scss";
+@import "media/phones.scss";

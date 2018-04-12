@@ -1,0 +1,143 @@
+.career_title {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.career{
+	@extend %clearfix;
+}
+
+.career__left{
+	float: left;
+	width: 260px;
+	text-align: center;
+}
+
+.career__pic{
+	display: inline-block;
+	width: 220px;
+	height: 220px;
+	border-radius: 9px;
+	overflow: hidden; //Чтобы контент не вылазил за обертку
+}
+
+.career__pic-img{
+	display: block;
+}
+
+.career__right{
+	float: right;
+	width: 460px;
+}
+
+.jobs{
+	text-align: right;
+}
+
+.jobs__item{
+	padding-left: 70px;
+}
+
+.jobs__block{
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+	width: 380px;
+	box-sizing: border-box;
+	padding: 15px 20px 10px;
+	text-align: left;
+	position: relative;
+	margin-bottom: 21px;
+	// margin-left: 80px;
+}
+.jobs__item:hover{
+	.jobs__block{
+		background: #33c1e3;
+	}
+	.jobs__title{
+		color: #fff;
+	}
+	.jobs__occ{
+		color: #fff;
+	}
+	.jobs__time{
+		color: #fff;
+	}
+	.jobs__year{
+		font-weight: 600;
+		color: #33c1e3;
+	}
+	.jobs__year::after{
+			border-color: #94e0f2;
+	}
+}
+
+.jobs__title{
+	font-size: 21px;
+	font-weight: 400;
+	color: #5a5a5a;
+	// margin-bottom: 2px;
+}
+
+.jobs__occ, .jobs__time, .jobs__year{
+	font-weight: 300;
+	color: #727272;
+}
+
+.jobs__occ{
+	// margin-bottom: 2px;
+}
+
+ .jobs__year{
+ 	position: absolute;
+ 	top: 50%;
+ 	margin-top: -14px; //Половина line-height
+ 	right: 100%; //Чтобы элемент был всегда слева
+	margin-right: 35px;
+	font-size: 14px;
+	line-height: 28px;
+	z-index: 10;
+
+	&::after{ //Добавление кружочка
+		content: "";
+		display: block;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: #33c1e3;
+		position: absolute;
+		right: -25px;
+		top: 50%; //Центрование блока
+		margin-top: -10px; //Центрование блока
+		border: 5px solid #f6f6f6;
+	}
+}
+
+.jobs__block::after, .jobs__block::before{ //Добавляем вертикальную линию
+	content: "";
+	display: block;
+	width: 1px;
+	background: #dddddd;
+	position: absolute;
+	right: 100%;
+	margin-right: 20px;
+}
+
+.jobs__item:first-child .jobs__block:before{
+	display: none;
+}
+
+.jobs__item:last-child .jobs__block::after{
+	display: none;
+}
+
+.jobs__block::before{ //Линия сверху слева блока
+	top: 0;
+	bottom: 50%;
+}
+
+.jobs__block::after{ //Линия снизу слева блока
+	top: 50%;
+	bottom: -25px;
+}

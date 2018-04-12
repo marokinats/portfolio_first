@@ -1,0 +1,55 @@
+.footer__ifo-left{
+	float: left;
+	width: 50%;
+	padding-top: 16px;
+    box-sizing: border-box;
+}
+
+.copyright{
+    font-weight: 300;
+	font-size: 14px;
+	// line-height: 40px;
+	color: #9c9c9c;
+}
+
+.footer__info-right{
+	float: right;
+    width: 50%;
+    text-align: right;
+	padding-top: 10px;
+}
+
+.socials__item{
+	display: inline-block;
+    vertical-align: middle;
+	margin-left: 2px;
+}
+
+.socials__link {
+    background-image: url("../img/sprites/spritesheet.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 31px;
+    height: 30px;
+}
+
+.sprite-fb {
+    background-position: -5px -5px;
+    &:hover {
+        background-position: -46px -5px;
+    }
+}
+
+.sprite-twitter {
+    background-position: -87px -5px;
+    &:hover {
+        background-position: -128px -5px;
+    }
+}
+
+.sprite-vk {
+    background-position: -169px -5px;
+    &:hover {
+        background-position: -211px -5px;
+    }
+}
